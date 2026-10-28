@@ -9,18 +9,18 @@ public class Car
         make = carMake;
         model = carModel;
         year = carYear;                                                  //need to add }
+    }
 
-
-    public void getYear(){                                               //change void to int
+    public int getYear(){                                               //change void to int
         return year;
     }
 
-    public void setModel(tempModel){                                     //add String to parameter
+    public void setModel(String tempModel){                                     //add String to parameter
         model = tempModel;
     }
 
     public String toString(){
-        return "the make of this car is: carMake";                       //did not concatenate 'make' with this string
+        return "the make of this car is: " + make;                       //did not concatenate 'make' with this string
     }
 }
 
