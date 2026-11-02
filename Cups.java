@@ -19,7 +19,7 @@ public class Cups {
         hasHandle = false;
     }
 
-    public Cups(String material, int capacity, Boolean hasHandle) {
+    public Cups(String material, int capacity, boolean hasHandle) {
         this.material = material; //this is to resolve naming conflicts by using the same word
         this.capacity = capacity; //this is a way an object refers to itself
         this.hasHandle = hasHandle;
@@ -37,7 +37,7 @@ public class Cups {
         return capacity;
     }
 
-    public Boolean getHasHandle(){
+    public boolean getHasHandle(){
         return hasHandle;
     }
 
@@ -50,7 +50,7 @@ public class Cups {
         capacity = cap;
     }
 
-    public void setHasHandle(Boolean handle){
+    public void setHasHandle(boolean handle){
         hasHandle = handle;
     }
 
@@ -66,8 +66,8 @@ public class Cups {
     }
 
     //equals to method -- only strings
-    public Boolean equals(Cups other){
-        Boolean flag = (material.equals(other.getMaterial()));
+    public boolean equals(Cups other){
+        boolean flag = (material.equals(other.getMaterial()));
         return flag;
     }
 

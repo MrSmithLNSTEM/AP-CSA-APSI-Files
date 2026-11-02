@@ -12,6 +12,15 @@ public class Mouse
     public int getAge(){
         return age;
     }
+
+    public String getColor(){
+        return furColor;
+    }
+
+    public boolean equals(Mouse other){
+        boolean flag = (furColor.equals(other.getColor()) && age == (other.getAge()));
+        return flag;
+    }
 }
 
 /*ran in main:
