@@ -9,7 +9,7 @@ public class HighestProductSubstring
         for (int i = 0; i < number.length()-1; i++){
             if (Integer.parseInt(number.substring(i, i+1)) * Integer.parseInt(number.substring(i+1, i+2))>tempProduct){
                 tempProduct = Integer.parseInt(number.substring(i, i+1)) * Integer.parseInt(number.substring(i+1, i+2));
-                weFoundIt = ("We found the highest product at " + i + ": which is " + number.charAt(i) + " x " + number.charAt(i+1));
+                weFoundIt = ("We found the highest product at index" + i + ": which is " + number.charAt(i) + " x " + number.charAt(i+1));
             }
             
         }
